@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
   res.send('Welcome to Node Babel');
 });
 
-app.listen(8000, () => {
+app.listen(process.env.PORT || 8000, () => {
   // eslint-disable-next-line no-console
-  console.log('app is listening to port 8000');
+  console.log('app is listening to port 8001');
 });
